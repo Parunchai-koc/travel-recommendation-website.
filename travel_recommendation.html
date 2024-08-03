@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Travelokia</title>
+    <link rel="stylesheet" href="./travel_recommendation.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Travelokia</h1>
+      <ul>
+        <li><a href="./travel_recommendation.html" id="home">Home</a></li>
+        <li><a href="./travel_contact.html" id="contact">Contact Us</a></li>
+        <li><a href="./travel_aboutus.html" id="about">About Us</a></li>
+        <li>
+          <input
+            type="text"
+            id="destinationInput"
+            placeholder="Enter destination or keyword"
+          />
+        </li>
+        <li>
+          <button id="btnSearch" onclick="searchDestination()">Search</button>
+        </li>
+        <li><button id="btnReset" onclick="resetForm()">Reset</button></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="analysisForm">
+        <h1><b>EXPLORE DREAM DESTINATION</b></h1>
+        <h4>
+          It encourages exploration of unfamiliar territories, embracing diverse
+          cultures and landscapes, while pursuing the desired destination that
+          captivates the heart and ignites a sense of wonder.
+        </h4>
+        <div class="social-bar">
+          <a href="https://twitter.com" target="_blank"
+            ><img src="tw.png" alt="Twitter"
+          /></a>
+          <a href="https://facebook.com" target="_blank"
+            ><img src="fb.webp" alt="Facebook"
+          /></a>
+          <a href="https://instagram.com" target="_blank"
+            ><img src="ig.webp" alt="Instagram"
+          /></a>
+          <a href="https://youtube.com" target="_blank"
+            ><img src="yt.png" alt="YouTube"
+          /></a>
+        </div>
+        <button id="book">BOOK NOW</button>
+        <h2>Your destination</h2>
+        <div id="report"></div>
+      </div>
+      <div class="searchDestination">
+        <div id="result"></div>
+      </div>
+    </div>
+    <script src="./travel_recommendation.js"></script>
+  </body>
+</html>
